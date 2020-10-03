@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>shark bait</title>
+    </head>
+    <body>
+        <script>
+            let humanSpeed = 5
+            let pontoonDistance = prompt('Qirg`oqgacha bo`lgan masofani kiriting:')
+            let sharkSpeed = 15
+            let sharkDistance = prompt('Akulaning odamgacha masofasini kiriting:')
+            let dolphin = prompt('Delfin bormi yoki yo`qmi? (1 yoki 0)')
+            let timeShark
+            let timeHuman
+
+            if (dolphin == 1) {
+                humanSpeed = humanSpeed * 2
+            }
+
+            // T = S / V 
+
+            timeHuman = pontoonDistance / humanSpeed;
+            timeShark = sharkDistance / sharkSpeed;
+
+            if (timeHuman > timeShark) {
+                alert('Shark Bait!')
+            } else {
+                alert('Alive!')
+            }
+
+
+    </script>
+    </body>
+</html>
